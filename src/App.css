@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Poppins&display=swap');
+body{
+  color: white;
+  margin: 0;
+  padding: 0;
+  background-image: url(/public/Allimages/Rectangle\ 9398.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+/* Navigation bar */
+.app-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100%;
+  width:100vw;
+
+}
+
+.left-navigation {
+  position: fixed;
+  left: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  color: white;
+  width: 288px;
+  border-radius: 0px 32px 32px 0px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 35px;
+  gap: 25px; 
+}
+
+.logo-image {
+  width: 25px;
+  height: 29px;
+}
+
+.logo-text {
+  font-family: 'Pacifico';
+  margin-top: 10px;
+  font-size: 32px;
+  color: white 70%;
+  margin-bottom:10px;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+.navigation-list {
+  list-style-type: none;
+  padding: 0px;
+  margin:0px;
+}
+
+.navigation-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 5px;
+  padding-left: 32px;
+  gap: 25px; 
+  cursor: pointer;
+}
+
+.nav-item-logo{
+  width:24px;
+  height:24px;
+}
+
+.nav-item-text{
+  font-size: 20px;
+  font-family: 'Work Sans';
+}
+
+.navigation-item.active {
+  background-color: #F30050;
+  color: white;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+
+
+/* search box */
+.search-bar {
+  position: absolute;
+  left: 353px;
+  top: 27px;
+  display: flex;
+  align-items: center;
+  width: 28%;
+  height: 5.1%;
+}
+
+.search-icon {
+  margin-right: 10px;
+  width:18px;
+  height:18px;
+}
+
+.search-icon-image {
+  width: 16px;
+  height: 16px;
+  position:absolute;
+  right:25px;
+
+}
+
+.search-input {
+  width:100%;
+  Height:100%;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-size: 18px;
+  background: transparent;
+  padding-left: 20px;
+  color: white;;
+}
+
+.search-input::placeholder {
+  color: white;
+}
+
+.search-input:focus {
+  border:2px solid #F2055C;
+}
+
+/* Search result */
+
+.search-result{
+  position:absolute;
+  left:328px;
+  top:132px;
+}
+
+.search-result-message{
+  font-size: 24px;
+  color: white;
+  margin: 0;
+}
+
+/* result box */
+.result-box{
+  position: absolute;
+  left:328px;
+  top:182px;
+  width: 75.6%;
+  overflow-y: auto;
+  max-height: 400px;
+
+}
+
+.result-item{
+  display: flex;
+  gap:15px;
+  flex-wrap: wrap;
+
+}
+
+.result-sub-box{
+  position: relative;
+  background-color: #390554;
+  width:237px;
+  height:155px;
+  border-radius: 10px;
+  font-family: 'Poppins';
+  padding: 23px 10px 10px 32px;
+}
+
+.box-header {
+  margin: 0px;
+  font-size: 16px;
+}
+.box-content{
+  display: flex;
+  gap: 60px;
+  font-size: 12px;
+}
+
+.box-content-right{
+  overflow-x: auto;
+}
+
+
+.box-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  right:10px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50px;
+  background-color: #960252;
+
+}
+
+
+/* connect button */
+
+.connect-button {
+  position: absolute;
+  right: 44px;
+  top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10.3%; /* (156 / 1512) * 100% */
+  height: 5.3%; /* (52 / 982) * 100% */
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(124, 15, 53, 1) 0%, rgba(88, 18, 102, 1) 100%);
+}
+
+.connect-button-text {
+  background: none;
+  border: none;
+  padding: 0px 0px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+}
+  
+
+/* footer */
+.footer {
+  position: fixed;
+  background-color: #F2055C;
+  width: 100%;
+  height: 68px;
+  bottom: 0;
+}
+
+/* social links */
+
+.social-links{
+  position: absolute;
+  bottom: 149px;
+  left: 34px;
+  display: flex;
+  justify-content: space-between;
+  width: 112px;
+
+}
+
+.social-links-logo{
+  width: 24px;
+  height: 24px;
+}
+
